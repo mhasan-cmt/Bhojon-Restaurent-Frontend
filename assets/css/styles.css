@@ -103,10 +103,10 @@ a:hover{
     section.section.hero .hero-slider{
         height: calc(100vh - 91px);
         width: 100%;
-    }
+    overflow: hidden;    }
     section.section.hero .hero-slider .single-slide{
         position: relative;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -118,7 +118,7 @@ a:hover{
         width: 100%;
         height: 100%;
         background-color: var(--dark);
-        opacity: .3;
+        opacity: .6;
         position: absolute;
         top: 0;
         left: 0;
@@ -126,9 +126,12 @@ a:hover{
     }
     section.section.hero .hero-slider .single-slide.slide-1{
         background-image: url(../img/hero-slider/1.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+    }
+    section.section.hero .hero-slider .single-slide.slide-2{
+        background-image: url(../img/hero-slider/2.jpg);
+    }
+    section.section.hero .hero-slider .single-slide.slide-3{
+        background-image: url(../img/hero-slider/3.jpg);
     }
     section.section.hero .hero-slider .single-slide .slide-title{
         color: var(--light);
@@ -234,12 +237,15 @@ section.section.offers .section-head .section-desc{
     margin-bottom: 2rem;
 }
 
-
+.product-card-wrapper .col-md-3{
+    width: 100%;
+}
 .product-card-wrapper .col-md-3 .single-product-card{
     background-color: var(--light);
     border: .5px solid rgba(0, 0, 0, 0.1);
     transition: all .5s ease-in-out;
     padding-bottom: 2rem;
+    width: 98%;
 }
 .product-card-wrapper .col-md-3 .single-product-card:hover{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -247,9 +253,11 @@ section.section.offers .section-head .section-desc{
 .product-card-wrapper .col-md-3 .single-product-card .product-img{
     padding: .5rem;
     margin-bottom: .5rem;
+    transition: .5s  all ease-in-out;
 }
 .product-card-wrapper .col-md-3 .single-product-card .product-img img{
     width: 100%;
+    padding: 1.5rem;
 }
 .product-card-wrapper .col-md-3 .single-product-card .prouduct-desc{
     margin-bottom: 2rem;
@@ -270,6 +278,9 @@ section.section.offers .section-head .section-desc{
 .product-card-wrapper .col-md-3 .single-product-card:hover .add-btn{
     border-color: var(--primary);
     color: var(--primary);
+}
+.product-card-wrapper .col-md-3 .single-product-card:hover .product-img{
+    transform: scale(1.1);
 }
 .product-card-wrapper .col-md-3 .single-product-card .add-btn:hover{
     background-color: var(--primary);
@@ -327,3 +338,28 @@ background-color: var(--primary);
     outline: var(--primary);
 }
 /* Utilities */
+/* Owl carousel  */
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+button.owl-prev,
+button.owl-next{
+    font-size: 3rem!important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .2;
+    transition: all .5s ease-in-out;
+}
+button.owl-prev:hover,
+button.owl-next:hover{
+    opacity: 1;
+}
+button.owl-prev{
+    left: -2rem;
+}
+button.owl-next{
+    right: -2rem;
+}
+
+

@@ -58,16 +58,26 @@
       </nav>
 
       <section class="section hero">
-        <div class="hero-slider">
+        <div id="test-slider" class="hero-slider owl-carousel owl-theme">
           <div class="single-slide slide-1">
               <h4  class="slide-title">Find your</h4>
               <h2 class="slide-desc">Best Cafe Deals</h2>
               <a class="btn slide-btn" href="#">SEE MORE</a>
           </div>
+          <div class="single-slide slide-2">
+              <h4  class="slide-title">Welcome to</h4>
+              <h2 class="slide-desc">Book Your Table</h2>
+              <a class="btn slide-btn" href="#">SEE MORE</a>
+          </div>
+          <div class="single-slide slide-3">
+              <h4  class="slide-title">Exclusive</h4>
+              <h2 class="slide-desc">Coffee Shop</h2>
+              <a class="btn slide-btn" href="#">SEE MORE</a>
+          </div>
         </div>
         <div class="container search-box py-4">
           <div class="row align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-5 col-sm-12 mb-2">
               <div class="input-group">
                 <span class="input-group-text bg-my-primary text-light" id="basic-addon1">
                   <i class="fas fa-search"></i>
@@ -75,7 +85,7 @@
                 <input type="text" class="form-control"aria-label="Username" aria-describedby="basic-addon1">
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 col-sm-12 mb-2">
               <div class="input-group ">
                 <span class="input-group-text bg-my-primary text-light" id="basic-addon1">
                   <i class="fas fa-cutlery"></i>
@@ -83,7 +93,7 @@
                 <input type="text" class="form-control" placeholder="Search category " aria-label="Username" aria-describedby="basic-addon1">
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-12 mb-2">
               <a href="#" class="btn btn-my-primary">Search</a>
             </div>
           </div>
@@ -94,7 +104,7 @@
     <section class="section story my-5">
       <div class="container">
         <div class="row story-inner text-center">
-          <div class="col-md-7">
+          <div class="col-md-7 mb-5">
             <div class="section-title">
               <h2 class="curve-title">Discover</h2>
               <h3 class="big-title">OUR STORY</h3>
@@ -124,7 +134,7 @@
           <h2 class="section-title">Exclusive</h2>
           <h3 class="section-desc">BEST OFFERS</h3>
         </div>
-        <div class="row product-card-wrapper">
+        <div id="product-card-wrapper" class="row product-card-wrapper owl-carousel owl-theme">
           <div class="col-md-3 text-center">
             <div class="single-product-card">
               <div class="product-img">
@@ -207,6 +217,7 @@
       </div>
     </section>
   </main>
+
     
     <script src="./vendor/js/jquery.min.js"></script>
     <script src="./vendor/js/owl.carousel.min.js"></script>
